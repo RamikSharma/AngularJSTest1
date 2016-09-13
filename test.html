@@ -3,16 +3,18 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">		</script>
 		<script src="app.js">		</script>
 		<title> AngularJS Test App		</title>
 	</head>
 	
-	<body>
+	<body style="background-color:#F0DEEC; margin:auto; width:50%; text-align:center; color:#FF9900; font-family:arial,sans-sarif,times new roman;">
 	<h1>AngularJS Test App </h1>
+		<BR>
 		<div ng-controller="TestController">
-			<input type="text" ng-model="name">
-			Your name is: {{sayHello() + ' ' + name}}
+			<input type="text" placeholder="Please enter your name here" ng-model="name">
+			<BR> <BR> <BR> <BR>
+			<p style="background-color:#FFC300; border-width:4px; border-color:#FF0080; border-style:solid; border-radius:7px; box-shadow: 4px 4px 1px #FF0080; padding:5px; margin:auto; width:50%; font-family:arial,sans-sarif,times new roman; font-size:1.5em; color:blue; position:absolute;"> {{sayHello() + ' ' + name + '. ' + "This is a beautiful day!"}} </p>
 		</div>
 	</body>
 </html>
