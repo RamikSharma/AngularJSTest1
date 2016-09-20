@@ -18,20 +18,20 @@
 				.message { font-size: 1.3em; font-weight: bold; }
 		</style>
 	</head>
-	<body style="background-color:#F0DEEC; text-align:center; color:#FF9900;>
+	<body style="background-color:#FFF5EE; text-align:center;>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="container" ng-controller="LunchCheckController">
-				<h1>Lunch Check App</h1>
+				<h1 style="color:blue">Lunch Check App</h1>
 					<div class="form-group">
 						<input id="lunch-menu" type="text"
 						placeholder="List comma separated dishes you usually have for lunch"
-						class="form-control" ng-model="dishname">
+						class="form-control" ng-model="dishname" style="border-color:{{bordercolor}};border-width:3px;"> <!-- Increased border width for visibility -->
 					</div>
 					<div class="form-group">
 						<button class="btn btn-default" ng-click="CheckDish()">Check If Too Much</button>
 					</div>
-					<div class="form-group message" style="color:blue;">
+					<div class="form-group message" style="color:{{fontcolor}};">
 						{{DisplayMessage}}
 					</div>
 				</div>

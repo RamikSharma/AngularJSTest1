@@ -6,7 +6,8 @@
 		LunchCheckController.$inject = ['$scope'];
 		function LunchCheckController ($scope)
 	{
-		$scope.dishname = "";	
+		$scope.dishname = "";
+		$scope.bordercolor = "gold";
 		$scope.CheckDish = function()
 		{
 				//var Name = $scope.dishname;
@@ -16,12 +17,18 @@
 				
 						if (X == 0 || $scope.dishname == "") {
 									$scope.DisplayMessage = "Please enter data first";
+									$scope.fontcolor = "red";
+									$scope.bordercolor = "red";
 								}
 						else if (X < 3 || X == 3) 	{
 											$scope.DisplayMessage = "Enjoy!";
+											$scope.fontcolor = "green";
+											$scope.bordercolor = "green";
 											}
 						else 	{
 									$scope.DisplayMessage = "Too Much!";
+									$scope.fontcolor = "green";
+									$scope.bordercolor = "green";
 								}
 			
 			}
